@@ -6,7 +6,7 @@
 /*   By: ael-yazi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/12 14:02:19 by ael-yazi          #+#    #+#             */
-/*   Updated: 2024/08/12 14:40:41 by ael-yazi         ###   ########.fr       */
+/*   Updated: 2024/08/12 16:26:40 by ael-yazi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_is_prime(int nb)
 
 	if (nb == 2)
 		return (1);
-	if (nb == 0 || nb == 1 || nb % 2 == 0)
+	if (nb < 2 || nb % 2 == 0)
 		return (0);
 	i = 3;
 	while (i * i <= nb)
@@ -32,5 +32,5 @@ int	ft_is_prime(int nb)
 
 /*int main()
 {
-	printf("%d", ft_is_prime(7));
+	printf("%d", ft_is_prime(-77));
 }*/
