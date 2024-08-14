@@ -6,7 +6,7 @@
 /*   By: ael-yazi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 22:31:23 by ael-yazi          #+#    #+#             */
-/*   Updated: 2024/08/13 23:26:05 by ael-yazi         ###   ########.fr       */
+/*   Updated: 2024/08/14 15:02:56 by ael-yazi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 		return (-1);
 	}
 	i = 0;
-	while (i <= size)
+	while (i < size)
 	{
 		(*range)[i] = min;
 		min++;
